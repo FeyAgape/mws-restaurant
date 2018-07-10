@@ -259,7 +259,7 @@ nav h1 a {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
-  width: 50%;
+  max-width: 50%;
 }
 #reviews-container {
   padding: 30px 40px 80px;
@@ -367,7 +367,7 @@ nav h1 a {
     top: 115px;
   }  
 #restaurant-container, #reviews-container {
-    width: 90%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: #f3f3f3;
@@ -390,10 +390,6 @@ nav h1 a {
 
 @media screen and (max-width: 600px) {
 
-  #restaurant-container, #reviews-container {
-    width: 80%;
-    background-color: #f3f3f3;
-  }
 }
 
 @media screen and (max-width: 450px) {
