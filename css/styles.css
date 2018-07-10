@@ -48,6 +48,14 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
 }
+#footer p {
+  color: #aaa;
+  font-size: 8pt;
+  letter-spacing: 1px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+}
 /* ====================== Navigation ====================== */
 header {
   width: 100%;
@@ -76,7 +84,6 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: 100%;
     position: relative;
 }
 
@@ -335,13 +342,15 @@ nav h1 a {
   }
 .inside #footer {
     width: 100%;
-  }  
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 768px) {
 
 #restaurant-img {
-    width: 100%;
+   max-width: 100%;
+   width: 100%;
   }
 #restaurant-cuisine {
     width: 100%;
@@ -359,22 +368,32 @@ nav h1 a {
   }  
 #restaurant-container, #reviews-container {
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #f3f3f3;
   }
 #reviews-list li {
     width: 100%;
   }    
+#maincontent {
+    max-width: 100%;
+  } 
+#footer {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+#reviews-container {
+    padding: 30px 40px 30px;
+  }
 }
 
 @media screen and (max-width: 600px) {
 
   #restaurant-container, #reviews-container {
-    width: 87%;
+    width: 80%;
     background-color: #f3f3f3;
   }
-#maincontent {
-    max-width: 100%;
-  }  
 }
 
 @media screen and (max-width: 450px) {
