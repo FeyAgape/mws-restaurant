@@ -144,6 +144,13 @@ nav h1 a {
   width: 200px;
 }
 
+.filter-options select:focus,
+.filter-options select:hover {
+    border: 1px solid #0275d8;
+    background-color: #eee;
+}
+
+
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   background-color: #f3f3f3;
@@ -197,6 +204,14 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+#restaurants-list li a:focus,
+#restaurants-list li a:hover 
+{
+    background-color: #fff;
+    color: orange;
+    border: 1px solid orange;    
 }
 
 /* ====================== Restaurant Details ====================== */

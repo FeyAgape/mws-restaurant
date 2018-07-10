@@ -11,7 +11,8 @@ var urlsToCache = [
     '/restaurant.html',
     '/js/dbhelper.js',
     '/js/main.js',
-    '/js/restaurant_info.js'
+    '/js/restaurant_info.js',
+    '/data/restaurants.json'
 ];
 
 self.addEventListener('install', function (event) {
