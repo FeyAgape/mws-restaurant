@@ -49,21 +49,8 @@
 
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNTaorK4hq-zbVIsO9q5ReIWflKv5CZ8Q&libraries=places&callback=initMap"></script>
-
-  <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('sw.js').then(function(registration) {
-                    // registration success
-                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }, function(err) {
-                    // registration failure
-                    console.log('ServiceWorker registration failed: ', err);
-                });
-            });
-        }
-    </script>
 
 </body>
 
