@@ -12,6 +12,11 @@ body {
 	margin: 0;
 	position:relative;
 }
+.screen-reader-only {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
@@ -211,7 +216,7 @@ nav h1 a {
 {
     background-color: #fff;
     color: orange;
-    border: 1px solid orange;    
+    border: 3px solid #ffa500;    
 }
 
 /* ====================== Restaurant Details ====================== */

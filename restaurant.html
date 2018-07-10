@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
   <!-- Meta tags -->
@@ -16,14 +16,15 @@
 </head>
 
 <body class="inside">
+   <p class="screen-reader-only"><a href="#maincontent">Skip to content</a></p>
   <!-- Beginning header -->
   <header>
     <!-- Beginning nav -->
-    <nav>
+    <nav role="navigation">
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
+    <ul id="breadcrumb" aria-label="Breadcrumb">
       <li><a href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
@@ -34,7 +35,7 @@
   <!-- Beginning main -->
   <main id="maincontent">
     <!-- Beginning map -->
-    <section id="map-container">
+    <section id="map-container" aria-role="application">
       <div id="map"></div>
     </section>
     <!-- End map -->
@@ -43,12 +44,12 @@
       <h1 id="restaurant-name"></h1>
       <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
+      <address id="restaurant-address"></address>
+      <table id="restaurant-hours" aria-label="Opening Times"> </table>
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
-    <section id="reviews-container">
+    <section id="reviews-container" aria-label="Restaurant Reviews">
       <ul id="reviews-list"></ul>
     </section>
     <!-- End reviews -->
