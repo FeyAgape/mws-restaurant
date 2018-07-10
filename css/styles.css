@@ -215,7 +215,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 45%;
 }
 #restaurant-name {
   color: #f18200;
@@ -270,17 +270,49 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+   border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
+  /*padding: 0 20px 20px;*/
   position: relative;
   width: 85%;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 #reviews-list li p {
   margin: 0 0 10px;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 11pt;
+}
+#reviews-list li p:first-child {
+  background-color: #333;
+  color: #fff;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 14pt;
+}
+#reviews-list li p:nth-child(2) {
+  color: #ddd;
+  font-size: 10pt;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+#reviews-list li p:nth-child(3) {
+  background-color: orange;
+  color: #fff;
+  display: inline-block;
+  font-size: 12pt;
+  margin: 10px 10px 10px 15px;
+  padding: 8px 12px 8px 12px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 #restaurant-hours td {
   color: #666;
@@ -301,15 +333,48 @@ nav h1 a {
 #restaurants-list li {
     margin: 2% 1%;
   }
+.inside #footer {
+    width: 100%;
+  }  
 }
 
 @media screen and (max-width: 768px) {
 
+#restaurant-img {
+    width: 100%;
+  }
+#restaurant-cuisine {
+    width: 100%;
+  }
 #restaurants-list li {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
+.inside #map-container {
+    height: 450px;
+    position: relative;
+    width: 100%;
+    top: 115px;
+  }  
+#restaurant-container, #reviews-container {
+    width: 90%;
+    background-color: #f3f3f3;
+  }
+#reviews-list li {
+    width: 100%;
+  }    
+}
+
+@media screen and (max-width: 600px) {
+
+  #restaurant-container, #reviews-container {
+    width: 87%;
+    background-color: #f3f3f3;
+  }
+#maincontent {
+    max-width: 100%;
+  }  
 }
 
 @media screen and (max-width: 450px) {
