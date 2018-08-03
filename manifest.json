@@ -8,9 +8,9 @@
             "sizes": "192x192"
     },
         {
-            "src": "/img/icons-310.png",
+            "src": "/img/icons-512.png",
             "type": "image/png",
-            "sizes": "310x310"
+            "sizes": "512x512"
     }
   ],
     "start_url": "/?source=pwa",
