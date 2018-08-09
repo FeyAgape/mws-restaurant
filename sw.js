@@ -26,7 +26,7 @@ self.addEventListener('install', event => {
     '/img/8.webp',
     '/img/9.webp',
     '/img/undefined.webp'
-    ]);
+  ]);
         })
         );
 });
@@ -51,7 +51,11 @@ dB = () => {
     }
 
     return new Promise((resolve, reject) => {
+<<<<<<< HEAD
         const openRequest = indexedDB.open('restaurant-reviews', 3);
+=======
+        const openRequest = indexedDB.open('restaurant-reviews', 2);
+>>>>>>> 3638104... Add a form to allow users to create their own reviews: In previous versions of the application, users could only read reviews from the database. You will need to add a form that adds new reviews to the database. The form should include the user’s name, the restaurant id, the user’s rating, and whatever comments they have. Submitting the form should update the server when the user is online. Add functionality to defer updates until the user is connected: If the user is not online, the app should notify the user that they are not connected, and save the users' data to submit automatically when re-connected. In this case, the review should be deferred and sent to the server when connection is re-established (but the review should still be visible locally even before it gets to the server.)
 
         openRequest.onerror = () => reject();
 
