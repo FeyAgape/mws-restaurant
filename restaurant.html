@@ -58,16 +58,41 @@
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
-      <h2 id="restaurant-name"></h2>
-      <img id="restaurant-img">
-      <p id="restaurant-cuisine"></p>
-      <address id="restaurant-address"></address>
-      <table id="restaurant-hours" aria-label="Opening Times"> </table>
-    </section>
+            <h2 id="restaurant-name"></h2>
+            <img id="restaurant-img">
+            <p id="restaurant-cuisine"></p>
+            <!-- Favourites -->
+            <div id="restaurant-isFavorite-container">
+                <label for="restaurant-isFavorite">Favorite Restaurant</label>
+                <input type="checkbox" name="restaurant-isFavorite" id="restaurant-isFavorite">
+            </div>
+            <address id="restaurant-address"></address>
+            <table id="restaurant-hours" aria-label="Opening Times"> </table>
+        </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
     <section id="reviews-container" aria-label="Restaurant Reviews">
       <ul id="reviews-list"></ul>
+      <!-- Review Forms -->
+      <div class="review_form">
+                <h2 id="review_form-head">Add a Review</h2>
+                <form id="review_form">
+                    <label class="review_form_label" for="review_form-name">Name</label>
+                    <input type="text" name="name" id="review_form" maxlength="50" />
+                    <label class="review_form_label" for="review_form-rating">Rating</label>
+                    <select name="rating" id="review_form-rating">
+                      <!-- Review options based on the google maps reviewing design -->
+                        <option value="1">1 - Hated it!</option>
+                        <option value="2">2 - Disliked it</option>
+                        <option value="3">3 - It's ok</option>
+                        <option value="4">4 - Liked it</option>
+                        <option value="5">5 - Loved it</option>
+                    </select>
+                    <label class="review_form_label" for="review_form-comments">Share details of your own experience at this place</label>
+                    <textarea name="comments" id="review_form-comments"></textarea>
+                    <button type="submit" id="review_form-submit">Post</button>
+                </form>
+            </div>
     </section>
     <!-- End reviews -->
   </main>
