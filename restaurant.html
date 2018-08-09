@@ -29,6 +29,7 @@
     
     <!-- Beginning breadcrumb -->
     <ul id="breadcrumb" aria-label="Breadcrumb" role="navigation">
+      <li><button onclick="myFunction()" style="cursor: pointer;border: none;background-color: transparent;color: #3f51b5;">Show/Hide map</button></li>
       <li><a href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
@@ -38,9 +39,20 @@
   <!-- End header -->
 
   <!-- Beginning main -->
+  <script type="text/javascript">
+  function myFunction() {
+    var x = document.getElementById("map-container");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
   <main id="maincontent">
     <!-- Beginning map -->
-    <section id="map-container" role="application">
+     
+    <section id="map-container" role="application" style="display: none;">
       <div id="map"></div>
     </section>
     <!-- End map -->
