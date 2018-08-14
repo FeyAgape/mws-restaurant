@@ -20,6 +20,10 @@
 </style>
 
 <body class="inside">
+  <!-- Connection message -->
+   <div class="connection-error" id="connectionError">
+    You seem to be having an issue with your connection! You review will be uploaded once your connected again!
+  </div>
    <p class="screen-reader-only"><a href="#maincontent">Skip to content</a></p>
   <!-- Beginning header -->
   <header>
@@ -76,7 +80,7 @@
       <!-- Review Forms -->
       <div class="review_form">
                 <h2 id="review_form-head">Add a Review</h2>
-                <form id="review_form">
+                <form id="review_form" action="#" method="POST">
                   <div class="label-container">
                     <label class="review_form_label" for="review_form-name">Name</label>
                   </div>
